@@ -26,7 +26,7 @@
                                 <div class="icon"><i class="fa fa-quote-left"></i>
                                 </div>
                                 <div class="name-picture">
-                                    <img class="" alt="" src="{{ .avatar | absURL }}">
+                                    <img class="img-responsive cld-responsive" alt="" src="{{ $.Site.Params.cloudinary_url }}/w_auto,c_scale,dpr_auto{{ .avatar }}">
                                     <h5>{{ .name }}</h5>
                                     <p>{{ .position }}</p>
                                 </div>

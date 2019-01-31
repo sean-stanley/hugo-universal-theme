@@ -26,9 +26,29 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="email">{{ i18n "contactMail" }}</label>
-                                <input type="text" class="form-control" name="email" id="email" required>
+                                <input type="email" class="form-control" name="email" id="email" required>
                             </div>
                         </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">{{ i18n "contactPhone" }}</label>
+                                <input type="tel" class="form-control" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">{{ i18n "contactAddress" }}</label>
+                                <input type="text" class="form-control" name="address" id="address" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                              <label for="message">Appliance</label>
+                                <select name="applianceType" id="appliance" class="form-control" required>
+                                  <option value="">(select one)</option><option value="brivis central heating">Brivis central heating</option><option value="Rinnai/INFINITY water heater">Rinnai/INFINITY water heater</option><option value="Rinnai Energysaver">Rinnai Energysaver</option><option value="Rinnai fire">Rinnai fire</option><option value="Rinnai portable or wall mounted heater">Rinnai portable or wall mounted heater</option><option value="Rinnai outdoor heater">Rinnai outdoor heater</option><option value="Rinnai BBQ">Rinnai BBQ</option><option value="Rinnai iHeat">Rinnai iHeat</option></select>
+                            </div>
+                        </div>
+
                         <div class="col-sm-12">
                             <div class="form-group">
                               <label for="message">{{ i18n "contactMessage" }}</label>

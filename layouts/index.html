@@ -19,6 +19,21 @@
 
         {{ partial "features.html" . }}
 
+
+        {{ partial "page.html" . }}
+        <!-- {{ range .Params.page_content }}
+            {{ if eq "content" .template }}
+                {{ partial "blocks/content" . }}
+            {{ end }}
+            {{ if eq "promotion" .template }}
+                {{ partial "blocks/promotion" . }}
+            {{ end }}
+            {{ if eq "staff" .template }}
+                {{ partial "blocks/staff" . }}
+            {{ end }}
+        {{ end }}
+        {{ .Content }} -->
+
         {{ partial "testimonials.html" . }}
 
         {{ partial "see_more.html" . }}

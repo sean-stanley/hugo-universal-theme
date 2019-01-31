@@ -1,6 +1,17 @@
 <div class="container" role="main">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {{ range .Params.page_content }}
+          {{ if eq "content" .template }}
+              {{ partial "blocks/content" . }}
+          {{ end }}
+          {{ if eq "promotion" .template }}
+              {{ partial "blocks/promotion" . }}
+          {{ end }}
+          {{ if eq "staff" .template }}
+              {{ partial "blocks/staff" . }}
+          {{ end }}
+      {{ end }}
       {{ .Content }}
       {{ if .Site.DisqusShortname }}
         <div class="disqus-comments">

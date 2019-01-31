@@ -1,5 +1,13 @@
 /* your styles go here */
 
+#top a {
+  color: #eee;
+}
+
+#top a:hover {
+  color: #fff;
+}
+
 .box-image-text .image {
   min-height: 200px;
   max-height: 200px;
@@ -7,4 +15,14 @@
 
 .box-simple {
   min-height: 230px;
+}
+
+.owl-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.8;
 }

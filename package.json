@@ -4,10 +4,17 @@
     "eslint": "latest",
     "eslint-config-standard": "^6.2.0",
     "eslint-plugin-promise": "^3.0.0",
-    "eslint-plugin-standard": "^2.0.1"
+    "eslint-plugin-standard": "^2.0.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
   },
   "scripts": {
     "lint": "eslint .",
-    "install_hugo": "brew update && brew install hugo"
+    "install_hugo": "brew update && brew install hugo",
+    "build": "webpack --output-path ./static/js --entry ./src/index.js -p --progress"
+  },
+  "dependencies": {
+    "cloudinary-core": "^2.6.1",
+    "lodash": "^4.17.11"
   }
 }

@@ -7,6 +7,9 @@
 - id: portedBy
   translation: "Ported to Hugo by"
 
+- id: contactAddress
+  translation: "Your Address"
+
 - id: contactGoTo
   translation: "Go to contact page"
 
@@ -27,6 +30,9 @@
 
 - id: contactMessage
   translation: "Your Message"
+
+- id: contactPhone
+  translation: "Your Phone"
 
 - id: contactSend
   translation: "Send Message"

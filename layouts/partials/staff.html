@@ -1,0 +1,36 @@
+{{ if isset .Site.Params "staff" }}
+{{ if .Site.Params.staff.enable }}
+{{ if gt (len .Site.Data.staff) 0 }}
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-3">
+      {{ range sort .Site.Data.staff "weight" }}
+      <div class="team-member">
+        <div class="image">
+          <img class="img-responsive img-circle cld-responsive" src="{{ $.Site.Params.cloudinary_url }}/ar_1:1,w_auto,dpr_auto,c_fill,g_face{{ .photo }}" alt="{{ .name }}">
+        </div>
+        <h3>{{ .name }}</h3>
+        <p class="role">{{ .role }}</p>
+        <ul class="social list-inline">
+          {{ if .facebook }}
+            <li class="list-inline-item"><a href="{{ .facebook }}" class="external facebook"><i class="fa fa-facebook"></i></a></li>
+          {{ end }}
+          {{ if .twitter }}
+            <li class="list-inline-item"><a href="{{ .twitter }}" class="external twitter"><i class="fa fa-twitter"></i></a></li>
+          {{ end }}
+          {{ if .email }}
+            <li class="list-inline-item"><a href="mailto:{{ .email }}" class="email"><i class="fa fa-envelope"></i></a></li>
+          {{ end }}
+        </ul>
+        <div class="text">
+          {{ .description | safeHTML }}
+        </div>
+      </div>
+    {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}
+{{ end }}
+{{ end }}

@@ -27,8 +27,18 @@
                 <div class="row">
 
                     <div class="col-md-12">
-
                         <div>
+                          {{ range .Params.page_content }}
+                              {{ if eq "content" .template }}
+                                  {{ partial "blocks/content" . }}
+                              {{ end }}
+                              {{ if eq "promotion" .template }}
+                                  {{ partial "blocks/promotion" . }}
+                              {{ end }}
+                              {{ if eq "staff" .template }}
+                                  {{ partial "blocks/staff" . }}
+                              {{ end }}
+                          {{ end }}
                           {{ .Content }}
                         </div>
 
