@@ -1,3 +1,7 @@
+<div class="container">
+  {{.Content}}
+</div>
+
 {{ if isset .Site.Params "staff" }}
 {{ if .Site.Params.staff.enable }}
 {{ if gt (len .Site.Data.staff) 0 }}
