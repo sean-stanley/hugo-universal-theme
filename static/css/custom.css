@@ -26,3 +26,10 @@
   font-size: 16px;
   line-height: 1.8;
 }
+
+#content img {
+  max-width: 500px;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
