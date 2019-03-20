@@ -1,4 +1,4 @@
-
+{{ if isset .Params "banner" }}
 {{ if gt (len .Params.banner) 0 }}
   <div id="heading-breadcrumbs" style="
     padding-top: 200px;
@@ -43,4 +43,5 @@
         </div>
     </div>
 </div>
+{{ end }}
 {{ end }}
