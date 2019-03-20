@@ -7,8 +7,8 @@
 {{ if gt (len .Site.Data.staff) 0 }}
 <div class="container">
   <div class="row text-center">
+    {{ range sort .Site.Data.staff "weight" }}
     <div class="col-md-3">
-      {{ range sort .Site.Data.staff "weight" }}
       <div class="team-member">
         <div class="image">
           <img class="img-responsive img-circle cld-responsive" src="{{ $.Site.Params.cloudinary_url }}/ar_1:1,w_auto,dpr_auto,c_fill,g_face{{ .photo }}" alt="{{ .name }}">
@@ -30,8 +30,8 @@
           {{ .description | safeHTML }}
         </div>
       </div>
-    {{ end }}
     </div>
+    {{ end }}
   </div>
 </div>
 
