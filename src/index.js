@@ -1,7 +1,9 @@
-import { Cloudinary } from 'cloudinary-core/cloudinary-core-shrinkwrap';
+import './features'
 
-const cl = Cloudinary.new({ "cloud_name": "maplekiwi" });
+import { Cloudinary } from 'cloudinary-core/cloudinary-core-shrinkwrap'
 
-cl.responsive();
+const cl = Cloudinary.new({ 'cloud_name': 'maplekiwi' })
 
-export default cl;
+cl.responsive()
+
+export default cl

@@ -10,7 +10,7 @@
                 {{ if isset .Site.Params "email" }}
 
                 <div class="heading">
-                  <h3>{{ i18n "contactForm" }}</h3>
+                  <h3>{{ .Page.Params.heading }}</h3>
                 </div>
 
                 <div id="contact-message"></div>

@@ -1749,56 +1749,56 @@ fieldset[disabled] .btn-template-primary.active {
   margin-top: 5px;
   margin-bottom: 0;
 }
-.bar {
+.universal-bar {
   position: relative;
   background: #467fbf;
   padding: 60px 0;
 }
-.bar.background-pentagon {
+.universal-bar.background-pentagon {
   background: url('../img/texture-bw.png') center center repeat;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
-.bar.background-gray {
+.universal-bar.background-gray {
   background: #eeeeee;
 }
-.bar.background-gray-dark {
+.universal-bar.background-gray-dark {
   background: #555555;
 }
-.bar.background-white {
+.universal-bar.background-white {
   background: #fff;
 }
-.bar.background-image-fixed-1 {
+.universal-bar.background-image-fixed-1 {
   background: url('../img/fixed-background-1.jpg') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.bar.background-image-fixed-2 {
+.universal-bar.background-image-fixed-2 {
   background: url('../img/fixed-background-2.jpg') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.bar.color-white h1,
-.bar.color-white h2,
-.bar.color-white h3,
-.bar.color-white h4,
-.bar.color-white h5,
-.bar.color-white h6,
-.bar.color-white p {
+.universal-bar.color-white h1,
+.universal-bar.color-white h2,
+.universal-bar.color-white h3,
+.universal-bar.color-white h4,
+.universal-bar.color-white h5,
+.universal-bar.color-white h6,
+.universal-bar.color-white p {
   color: #fff;
 }
-.bar.padding-big {
+.universal-bar.padding-big {
   padding: 50px 0;
 }
-.bar.padding-horizontal {
+.universal-bar.padding-horizontal {
   padding-left: 30px;
   padding-right: 30px;
 }
-.bar.margin-vertical {
+.universal-bar.margin-vertical {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.bar .dark-mask {
+.universal-bar .dark-mask {
   position: absolute;
   top: 0;
   left: 0;

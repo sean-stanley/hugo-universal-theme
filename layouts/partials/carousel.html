@@ -5,7 +5,24 @@
     <div class="home-carousel">
         <div class="dark-mask"></div>
         <div class="container">
-            <div class="homepage owl-carousel">
+          <img src="{{ $.Site.Params.cloudinary_url }}{{ .Site.Params.logo_large }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm" style="
+            z-index: 1;
+            background: white;
+            position: relative;
+            width: 100px;
+            padding: 12px;
+            margin-top: -60px;"
+          >
+          <img src="{{ $.Site.Params.cloudinary_url }}{{ .Site.Params.logo_large }}" alt="{{ .Title }} logo" class="visible-xs visible-sm"
+          style="
+            z-index: 1;
+            background: white;
+            position: relative;
+            width: 100px;
+            padding: 12px;
+            margin-top: -60px;"
+          >
+            <div class="homepage owl-carousel" style="margin-bottom: 60px">
                 {{ range sort .Site.Data.slides "weight" }}
                 <div class="item">
                     <div class="row">

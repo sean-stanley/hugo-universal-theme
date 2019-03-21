@@ -1,8 +1,6 @@
 /* global $this: true */
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "animationsSlider" }] */
 
-console.log('hello world')
-
 if ($.cookie('themeCSSpath')) {
   $('link#theme-stylesheet').attr('href', $.cookie('themeCSSpath'))
 }
@@ -83,7 +81,8 @@ function sliderHomepage () {
     // var owl = $('#slider')
 
     $('#slider').owlCarousel({
-      autoPlay: 3000,
+      loop: true,
+      autoplay: true,
       items: 4,
       itemsDesktopSmall: [900, 3],
       itemsTablet: [600, 3],
@@ -104,6 +103,14 @@ function sliders () {
     })
 
     $('.testimonials').owlCarousel({
+      nav: true,
+      dots: true,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      autoplay: true,
+      autoplaySpeed: 300,
+      dotsSpeed: 300,
+      autoplayHoverPause: true,
+      slideBy: 'page',
       items: 4,
       itemsDesktopSmall: [990, 3],
       itemsTablet: [768, 2],
@@ -111,11 +118,11 @@ function sliders () {
     })
 
     $('.project').owlCarousel({
-      navigation: true, // Show next and prev buttons
-      navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      nav: true, // Show next and prev buttons
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
       slideSpeed: 300,
       paginationSpeed: 400,
-      autoPlay: true,
+      autoplay: true,
       stopOnHover: true,
       singleItem: true,
       afterInit: '',
@@ -128,7 +135,7 @@ function sliders () {
       items: 1,
       autoplaySpeed: 2000,
       dotsSpeed: 1000,
-      autoplay: true,
+      autoplay: true
     })
   }
 }

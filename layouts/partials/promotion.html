@@ -2,7 +2,7 @@
 {{ if .Site.Params.promotions.enable }}
 {{ if gt (len .Site.Data.promotions) 0 }}
 {{ $promotion := index (sort .Site.Data.promotions "date") 0 }}
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
+<section class="universal-bar background-image-fixed-2 no-mb color-white text-center">
     <div class="dark-mask"></div>
     <div class="container">
         <div class="row">
