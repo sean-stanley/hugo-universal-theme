@@ -6,6 +6,15 @@
   background-size: cover;
 }
 
+.navbar-right.right-logo {
+  margin: 16px;
+}
+
+.navbar-collapse .navbar-right.right-logo:first-of-type {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 
 
 .customers .item img {
