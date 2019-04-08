@@ -1,15 +1,16 @@
 {{ if .Params.youtube_link }}
   <div class="container"><div class="row">
     <div class="col-xs-12">
-      <div class="center-block" style="width: 560px; margin-bottom: 32px">
+      <div class="center-block">
+        <div class="embed-responsive embed-responsive-16by9">
           <iframe
-            width="560"
-            height="315"
+            class="embed-responsive-item"
             src="{{ .Params.youtube_link }}"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+        </div>
         </div>
       </div>
     </div>

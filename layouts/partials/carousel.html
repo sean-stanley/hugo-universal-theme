@@ -8,21 +8,14 @@
           <img src="{{ $.Site.Params.cloudinary_url }}{{ .Site.Params.logo_large }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm" style="
             z-index: 1;
             background: white;
-            position: relative;
+            position: absolute;
             width: 100px;
             padding: 12px;
-            margin-top: -66px;"
+            margin-top: -66px;
+            left: 24px;
+            "
           >
-          <img src="{{ $.Site.Params.cloudinary_url }}{{ .Site.Params.logo_large }}" alt="{{ .Title }} logo" class="visible-xs visible-sm"
-          style="
-            z-index: 1;
-            background: white;
-            position: relative;
-            width: 100px;
-            padding: 12px;
-            margin-top: -66px;"
-          >
-            <div class="homepage owl-carousel" style="margin-bottom: 60px">
+          <div class="homepage owl-carousel" style="margin-bottom: 60px">
                 {{ range sort .Site.Data.slides "weight" }}
                 <div class="item">
                     <div class="row">

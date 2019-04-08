@@ -3,10 +3,11 @@
 
     <div class="navbar navbar-default yamm" role="navigation" id="navbar">
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
-                    <img src="{{ $.Site.Params.cloudinary_url }}{{ .Site.Params.logo }}" alt="{{ .Title }}" class="hidden-xs hidden-sm">
+                    <img src="{{ $.Site.Params.cloudinary_url }}{{ .Site.Params.logo }}" alt="{{ .Title }}" class="hidden-xs hidden-sm"
+                    style="margin-left: 24px;">
                     <img src="{{ $.Site.Params.cloudinary_url }}{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="visible-xs visible-sm">
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
@@ -20,8 +21,10 @@
             <!--/.navbar-header -->
 
             <div class="navbar-collapse collapse" id="navigation">
-              <img class="navbar-right right-logo" height="40" src="{{ $.Site.Params.cloudinary_url }}/h_80,c_thumb/gas/rinnai-logo" alt="Rinnai Gas Appliances" class="hidden-xs hidden-sm">
+              <img class="navbar-right right-logo" height="40" src="{{ $.Site.Params.cloudinary_url }}/h_80,c_thumb/gas/Master-Gasfitters-Logo.jpg" alt="Brivis a rinnai company" class="hidden-xs hidden-sm">
               <img class="navbar-right right-logo" height="40" src="{{ $.Site.Params.cloudinary_url }}/h_80,c_thumb/gas/brivis_rinnai_logo" alt="Brivis a rinnai company" class="hidden-xs hidden-sm">
+              <img class="navbar-right right-logo" height="40" src="{{ $.Site.Params.cloudinary_url }}/h_80,c_thumb/gas/rinnai-logo" alt="Rinnai Gas Appliances" class="hidden-xs hidden-sm">
+
                 <ul class="nav navbar-nav navbar-right">
                   {{ range $menu.nav }}
                   <li class="dropdown">

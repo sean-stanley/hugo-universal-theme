@@ -112,6 +112,19 @@ function sliders () {
       autoplayHoverPause: true,
       slideBy: 'page',
       items: 4,
+      responsive: {
+        0: {
+          items: 1,
+          dots: false,
+          autoplayTimeout: 6000
+        },
+        600: {
+          items: 2
+        },
+        990: {
+          items: 3
+        }
+      },
       itemsDesktopSmall: [990, 3],
       itemsTablet: [768, 2],
       itemsMobile: [480, 1]
