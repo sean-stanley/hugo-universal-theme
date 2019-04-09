@@ -4,7 +4,7 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-  <title>{{ .Title }}</title>
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
   <meta name="author" content="{{ .Site.Author.name }}" />
 
   {{ if .Keywords }}
@@ -50,8 +50,12 @@
   ` | safeHTML }}
 
   <!-- Favicon and apple touch icons-->
-  <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "img/favicon-32x32.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ "img/favicon-96x96.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "img/favicon.png" | relURL }}">
   <link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}" />
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff">
   <!-- owl carousel css -->
 
   <link href="{{ "css/owl.carousel.css" | relURL}}" rel="stylesheet">
