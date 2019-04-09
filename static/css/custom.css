@@ -28,6 +28,20 @@
 }
 
 
+/* flex row */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  padding: 8px;
+}
+.flex-25 {
+  flex: 25%;
+  flex-grow: 0;
+
+}
 
 .customers .item img {
   filter: none;

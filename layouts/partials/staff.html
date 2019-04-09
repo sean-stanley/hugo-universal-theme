@@ -6,12 +6,12 @@
 {{ if .Site.Params.staff.enable }}
 {{ if gt (len .Site.Data.staff) 0 }}
 <div class="container">
-  <div class="row text-center">
+  <div class="row text-center flex-row">
     {{ range sort .Site.Data.staff "weight" }}
-    <div class="col-md-3">
+    <div class="flex-col flex-25">
       <div class="team-member">
         <div class="image">
-          <img class="img-responsive img-circle cld-responsive" src="{{ $.Site.Params.cloudinary_url }}/ar_1:1,w_auto,dpr_auto,c_fill,g_face{{ .photo }}" alt="{{ .name }}">
+          <img class="img-responsive img-circle cld-responsive" src="{{ $.Site.Params.cloudinary_url }}/ar_1:1,w_auto,h_500,dpr_auto,c_thumb,g_face{{ .photo }}" alt="{{ .name }}">
         </div>
         <h3>{{ .name }}</h3>
         <p class="role">{{ .role }}</p>
