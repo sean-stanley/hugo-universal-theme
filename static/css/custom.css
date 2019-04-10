@@ -1,5 +1,17 @@
 /* your styles go here */
 
+@media (max-width: 767px) {
+  .navbar {
+    min-height: 90px;
+  }
+}
+
+button.navbar-toggle.btn-template-main {
+    margin-top: 26px;
+    margin-right: 8px;
+    margin-bottom: 24px;
+}
+
 #page-template p > img {
   width: 150px;
 }
@@ -8,6 +20,11 @@
   background: url('https://res.cloudinary.com/maplekiwi/image/upload/w_1600,g_center,c_fit/gas/tao-wen-148062-unsplash.jpg') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.navbar-right.pull-left {
+  margin-top: 32px;
+  margin-left: 8px;
 }
 
 .navbar-right.right-logo {
@@ -40,8 +57,19 @@
 .flex-25 {
   flex: 25%;
   flex-grow: 0;
-
 }
+
+@media (max-width: 767px) {
+  .navbar {
+    min-height: 90px;
+  }
+  .flex-xs-100 {
+    flex: 100%;
+    flex-grow: 1;
+  }
+}
+
+
 
 .customers .item img {
   filter: none;
@@ -54,6 +82,10 @@
 
 #top a:hover {
   color: #fff;
+}
+
+#top .contact-us a {
+  text-decoration: underline;
 }
 
 .box-image-text .image {

@@ -23,7 +23,9 @@
   hsla(290, 50%, 8%, 0.019) 91.2%,
   hsla(290, 50%, 8%, 0) 100%
 ),
-    url('{{ $.Site.Params.cloudinary_url }}/c_fill,g_center,h_280,w_1500{{ .Params.banner }}');
+    url('{{ $.Site.Params.cloudinary_url }}/c_fill,g_center,w_1440{{ .Params.banner }}');
+    background-size: cover;
+    background-position: center;
     ">
     <div class="container">
         <div class="row">

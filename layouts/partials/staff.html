@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row text-center flex-row">
     {{ range sort .Site.Data.staff "weight" }}
-    <div class="flex-col flex-25">
+    <div class="flex-col flex-25 flex-xs-100">
       <div class="team-member">
         <div class="image">
           <img class="img-responsive img-circle cld-responsive" src="{{ $.Site.Params.cloudinary_url }}/ar_1:1,w_auto,h_500,dpr_auto,c_thumb,g_face{{ .photo }}" alt="{{ .name }}">
