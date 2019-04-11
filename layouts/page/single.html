@@ -28,6 +28,7 @@
 
                     <div class="col-md-12">
                         <div>
+                          {{ partial "video" .}}
                           {{ range .Params.page_content }}
                               {{ if eq "content" .template }}
                                   {{ partial "blocks/content" . }}
