@@ -111,5 +111,5 @@ button.navbar-toggle.btn-template-main {
   max-width: 500px;
   margin: auto;
   display: block;
-  width: 100%;
+  width: auto;
 }
