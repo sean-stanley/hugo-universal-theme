@@ -113,3 +113,8 @@ button.navbar-toggle.btn-template-main {
   width: auto;
   padding: 8px;
 }
+
+#content .team-member img {
+  max-width: 100%;
+  width: 250px;
+}
