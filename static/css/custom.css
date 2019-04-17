@@ -108,9 +108,7 @@ button.navbar-toggle.btn-template-main {
 }
 
 #content img {
-  max-width: 500px;
   display: block;
-  width: auto;
   padding: 8px;
 }
 

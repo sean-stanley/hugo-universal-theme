@@ -1,7 +1,7 @@
 {{ if isset .Params "banner" }}
 {{ if gt (len .Params.banner) 0 }}
   <div id="heading-breadcrumbs" style="
-    padding-top: 200px;
+    padding-top: 350px;
     padding-bottom: 0;
     background:
     linear-gradient(
@@ -23,9 +23,9 @@
   hsla(290, 50%, 8%, 0.019) 91.2%,
   hsla(290, 50%, 8%, 0) 100%
 ),
-    url('{{ $.Site.Params.cloudinary_url }}/c_fill,g_center,w_1440{{ .Params.banner }}');
+    url('{{ $.Site.Params.cloudinary_url }}/c_scale,w_2000{{ .Params.banner }}');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     ">
     <div class="container">
         <div class="row">
